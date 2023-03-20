@@ -1,3 +1,4 @@
 .ipynb_checkpoints/
 progress/
+models/
 *.pth
