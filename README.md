@@ -47,4 +47,22 @@ This section will show the results of training on the different models of the mo
 ## Model Trained on generated infomation 128x128 Model B
 ![Model_B](figures/BC_B_training.png)
 
-As we can see from the following trainings the model trained on the original infomation at the highest resolution of 128 preformed the best at 99.0% accuracy. The same model on original data scaled down to 32 preformed the worst of all the models at 85.8% (Model A_32) accuracy showing the additional infomation from the generator provides a better ability to generalize on training infomation. The model which worked with generated infomation preformed at almost 10% higher than the A_32 Model at an accuracy of 94.8%.
+Accuracy Metrics are as follows
+```
+F1 Score:
+  A: 1.0000
+  B: 0.9333
+  A32: 0.7429
+
+Accuracy:
+  A: 1.0000
+  B: 0.9412
+  A32: 0.8824
+
+AUC:
+  A: 1.0000
+  B: 0.9826
+  A32: 0.9615
+  ```
+
+As we can see from the following trainings the model trained on the original infomation at the highest resolution of 128 preformed the best at 99.0% accuracy. The same model on original data scaled down to 32 preformed the worst of all the models at 83.8% (Model A_32) accuracy showing the additional infomation from the generator provides a better ability to generalize on training infomation. The model which worked with generated infomation preformed at almost 10% higher than the A_32 Model at an accuracy of 94.8%.
