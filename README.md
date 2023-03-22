@@ -66,3 +66,33 @@ AUC:
   ```
 
 As we can see from the following trainings the model trained on the original infomation at the highest resolution of 128 preformed the best at 99.0% accuracy. The same model on original data scaled down to 32 preformed the worst of all the models at 83.8% (Model A_32) accuracy showing the additional infomation from the generator provides a better ability to generalize on training infomation. The model which worked with generated infomation preformed at almost 10% higher than the A_32 Model at an accuracy of 94.8%.
+
+# Location of Each Assigment Requirement
+
+### Train a binary classifier (called A) 
+Located in TrainClassifier.ipynb (All classification models were trained here)
+
+### Train the SRGAN to generate 128x128 images
+Located in TrainSRGAN.ipynb
+
+### Examples of scaled images in JNB 
+Gif on main page as well as examples on TrainSRGAN.ipynb during training
+
+### SRGAN in order to train a new model (called B)
+Located in TrainClassifier.ipynb (All classification models were trained here)
+
+### Train the SRGAN for at least 150 epochs
+SRGRAN was trained for 285 EPOCHS as shown in TrainSRGAN.ipynb
+
+### Divide the dataset into 70% training and 30% testing
+The dataset is already split by testing and training, I didnt see a purpose in doing this
+
+### Apply normalization and image transformation show some of the transformed samples
+NORALIZATION LOCATED IN utils/trainer.py this was created in the customdataset not in the training file. Normalization is commented out in the TrainClassifier.ipynb due to the formating of the customdataset. However it is present. Images are demonstrated in TrainClassifier.ipynb as last trained network was Model B.
+
+### Compare the performance of both models
+Images in readme
+
+### Save your models after each n epoch
+Located in utils/Training_Functions.py
+Models located in utils/Models.py
